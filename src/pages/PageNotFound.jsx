@@ -1,11 +1,11 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 
-const Logout = () => {
+const PageNotFound = () => {
   const navigate = useNavigate();
   return (
     <>
-      <h1>This is Logout page</h1>
+      <h1>Page Not Found</h1>
       <button onClick={() => navigate("/")}>Home</button>
       <button onClick={() => navigate("/pricing")}>Pricing</button>
       <button onClick={() => navigate("/auth/login")}>Login</button>
@@ -20,4 +20,4 @@ const Logout = () => {
   );
 };
 
-export default Logout;
+export default PageNotFound;
